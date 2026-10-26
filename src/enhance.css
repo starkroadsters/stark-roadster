@@ -1,0 +1,50 @@
+/* Stark Roadsters — enhancement layer (motion, spotlight, marquee, reveals).
+   Every rule that moves things is disabled for prefers-reduced-motion. */
+
+.marquee{
+  position:relative;overflow:hidden;white-space:nowrap;
+  border-block:1px solid rgba(255,255,255,.14);
+  background:linear-gradient(100deg,#1C278A 0%,#1763A0 45%,#970F12 100%);
+  padding:20px 0;color:#fff;
+}
+.marquee::before,.marquee::after{
+  content:"";position:absolute;top:0;bottom:0;width:120px;z-index:1;pointer-events:none;
+}
+.marquee::before{left:0;background:linear-gradient(90deg,#1C278A,transparent)}
+.marquee::after{right:0;background:linear-gradient(270deg,#970F12,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-group{display:flex;align-items:center;gap:48px;padding-right:48px;
+  font-weight:800;font-size:clamp(18px,2.6vw,30px);letter-spacing:.08em;text-transform:uppercase}
+.marquee-group span:nth-child(even){color:#997725}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+html.enhanced .hero{position:relative;isolation:isolate}
+html.enhanced .hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(640px circle at var(--mx,70%) var(--my,35%),rgba(23,99,160,.20),transparent 62%);
+  transition:background-position .2s;
+}
+html.enhanced .hero .container{position:relative;z-index:1}
+
+html.enhanced .hero-logo{transition:transform .5s cubic-bezier(.2,.7,.2,1);will-change:transform}
+
+html.enhanced .hero-copy>*{animation:heroIn .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 110ms)}
+@keyframes heroIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+html.enhanced .reveal{opacity:0;transform:translateY(30px);
+  transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.enhanced .reveal.reveal-in{opacity:1;transform:none}
+
+html.enhanced .btn{transition:transform .35s cubic-bezier(.2,.7,.2,1),background-color .25s,color .25s,box-shadow .25s}
+html.enhanced .btn-primary:hover{box-shadow:0 14px 40px -10px rgba(151,15,18,.65)}
+
+:focus-visible{outline:2px solid #997725;outline-offset:3px}
+
+@media (prefers-reduced-motion: reduce){
+  .marquee-track{animation:none}
+  html.enhanced .hero-copy>*{animation:none}
+  html.enhanced .reveal{opacity:1;transform:none;transition:none}
+  html.enhanced .hero::after{display:none}
+  html.enhanced .btn,html.enhanced .hero-logo{transition:none!important;transform:none!important}
+}

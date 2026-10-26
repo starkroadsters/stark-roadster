@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#091239" />
+  <meta name="description" content="Meet Stark Roadsters, a motorsport engineering team. Explore the visual identity and an illustrative 3D concept study." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stark Roadsters | Built for the Pursuit" />
+  <meta property="og:description" content="Meet the team, explore its visual identity, and view an illustrative 3D concept study." />
+  <meta property="og:image" content="https://stark-roadsters.vercel.app/assets/stark-roadsters-logo.png" />
+  <link rel="icon" href="/assets/stark-roadsters-logo.png" type="image/png" />
+  <link rel="preload" as="image" href="/assets/stark-roadsters-logo.png" fetchpriority="high" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/enhance.css" />
+  <title>Stark Roadsters — Built for the Pursuit</title>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a href="#top" class="brand" aria-label="Stark Roadsters, back to top">
+      <img src="/assets/stark-roadsters-logo.png" alt="" width="72" height="72" class="brand-logo" />
+      <span class="brand-label">STARK<br /><span>ROADSTERS</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#identity">Our purpose</a>
+      <a href="#machine">Concept study</a>
+      <a href="#team">Our team</a>
+      <a href="#context">Project records</a>
+    </nav>
+    <a class="header-action" href="#machine">EXPLORE <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-heading">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> MOTORSPORT / ENGINEERING TEAM <span class="eyebrow-rule"></span> 001</div>
+        <p class="hero-kicker">DESIGN WITH PURPOSE. BUILD WITH INTENT.</p>
+        <h1 id="hero-heading">BUILT FOR<br /><span class="hero-title-accent">THE PURSUIT<span class="hero-period">.</span></span></h1>
+        <p class="hero-description"><strong>Stark Roadsters</strong> is a motorsport engineering team shaped by curiosity, collaboration, and the drive to turn ideas into work that can be tested.</p>
+        <div class="hero-buttons">
+          <a href="#team" class="btn btn-primary">MEET THE TEAM <span aria-hidden="true">↓</span></a>
+          <a href="#machine" class="btn btn-outline">EXPLORE THE CONCEPT <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-bottom-note"><span class="tiny-rule"></span> DESIGN / ENGINEERING / DRIVE</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-art-halo" aria-hidden="true"></div>
+        <img src="/assets/stark-roadsters-logo.png" class="hero-logo" alt="Official Stark Roadsters emblem depicting a racing-inspired sports car above the Stark Roadsters name" width="1254" height="1254" />
+        <span class="hero-art-coordinate" data-parallax="-0.08" aria-hidden="true">S/R — 001<br />DESIGNED TO MOVE</span>
+        <span class="hero-art-number" data-parallax="0.06" aria-hidden="true">01 / 04</span>
+      </div>
+    </div>
+    <div class="hero-footer container"><span>SCROLL TO DISCOVER</span><span class="scroll-indicator" aria-hidden="true">↓</span><span>REDEFINING THE ROAD AHEAD</span></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><div class="marquee-group"><span>Design</span><span>✦</span><span>Engineering</span><span>✦</span><span>Teamwork</span><span>✦</span><span>Testable ideas</span><span>✦</span></div><div class="marquee-group"><span>Design</span><span>✦</span><span>Engineering</span><span>✦</span><span>Teamwork</span><span>✦</span><span>Testable ideas</span><span>✦</span></div></div></div>
+
+  <section class="statement" id="identity" aria-labelledby="statement-heading">
+    <div class="container statement-content">
+      <div class="section-marker"><span class="marker-line"></span> 01 / THE VISION</div>
+      <div>
+        <h2 id="statement-heading">IDEAS INTO<br /><em>MOTION.</em></h2>
+        <p>Motorsport engineering brings design, analysis, and teamwork together under real constraints. Stark Roadsters is built around that shared pursuit: ask better questions, make ideas tangible, and learn from the work.</p>
+        <div class="statement-facts">
+          <div><span class="fact-icon">✦</span><strong>DESIGN</strong><small>Turn questions into ideas</small></div>
+          <div><span class="fact-icon">◇</span><strong>ENGINEERING</strong><small>Make ideas testable</small></div>
+          <div><span class="fact-icon">↗</span><strong>TEAMWORK</strong><small>Move forward together</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="machine" class="experience" aria-labelledby="experience-heading">
+    <div class="experience-sticky">
+      <div class="experience-canvas-wrap">
+        <canvas id="car-canvas" aria-label="Interactive three-dimensional illustrative F1-inspired race car concept. Scroll to change the camera view or drag to orbit." role="img"></canvas>
+        <div class="canvas-fallback" id="canvas-fallback" hidden>
+          <img src="/assets/stark-roadsters-logo.png" alt="Stark Roadsters official emblem" />
+          <p>3D preview unavailable on this device.</p>
+        </div>
+      </div>
+      <div class="experience-overlay container">
+        <div class="experience-topline"><span>02 / CONCEPT STUDY</span><span class="technical-cross">＋</span><span>ILLUSTRATIVE 3D / 001</span></div>
+        <div class="experience-copy">
+          <div class="experience-step active" data-step="0">
+            <div class="step-index">VIEW 01 / INTRODUCTION</div>
+            <h2 id="experience-heading">FORM<br />MEETS <em>FORCE.</em></h2>
+            <p>An interactive visual study of a fictional open-wheel race car, inspired by Formula One styling. Explore the shape and details; this model does not represent the team's competition vehicle.</p>
+          </div>
+          <div class="experience-step" data-step="1" aria-hidden="true">
+            <div class="step-index">VIEW 02 / PROFILE</div>
+            <h2>BUILT TO<br /><em>TURN HEADS.</em></h2>
+            <p>Orbit the illustrative model to examine its profile. Its proportions and components are creative choices, not verified vehicle specifications.</p>
+          </div>
+          <div class="experience-step" data-step="2" aria-hidden="true">
+            <div class="step-index">VIEW 03 / DETAILS</div>
+            <h2>THE POWER<br />OF <em>DETAIL.</em></h2>
+            <p>Colour and geometry explore the supplied visual identity. They are not evidence of a built or tested vehicle.</p>
+          </div>
+        </div>
+        <div class="experience-toolbar">
+          <div class="concept-disclosure"><span class="disclosure-dot"></span><span><strong>F1-INSPIRED ILLUSTRATIVE CONCEPT — NOT THE TEAM'S CAR</strong><br />Procedural 3D study. No vehicle specifications or performance claims are implied.</span></div>
+          <div class="scene-controls">
+            <span class="scene-instruction">DRAG TO ORBIT <span aria-hidden="true">↔</span></span>
+            <button id="reset-view" class="round-control" type="button" aria-label="Reset 3D camera view" title="Reset camera">↺</button>
+            <button id="motion-toggle" class="motion-control" type="button" aria-pressed="true">MOTION ON</button>
+          </div>
+        </div>
+      </div>
+      <div class="experience-progress" aria-hidden="true"><span id="experience-progress-bar"></span></div>
+    </div>
+  </section>
+
+  <section class="design-section" id="details" aria-labelledby="design-heading">
+    <div class="container">
+      <div class="section-marker"><span class="marker-line"></span> 03 / VISUAL IDENTITY</div>
+      <div class="design-heading-row"><h2 id="design-heading">A DISTINCTIVE<br /><em>STARTING POINT.</em></h2><p>The supplied emblem and five-colour palette establish the visual direction. The identity is a foundation for the team's story—not a substitute for its people, vehicle, or engineering evidence.</p></div>
+      <div class="design-grid">
+        <article class="design-card">
+          <div class="design-card-top"><span>01 / ENERGY</span><span>↗</span></div>
+          <div class="design-graphic design-graphic-speed" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <h3>ENERGY</h3>
+          <p>Crimson and blue accents bring contrast to the supplied motorsport-inspired identity.</p>
+        </article>
+        <article class="design-card">
+          <div class="design-card-top"><span>02 / PRECISION</span><span>↗</span></div>
+          <div class="design-graphic design-graphic-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>STRUCTURE</h3>
+          <p>Grid lines and measured spacing give the digital experience a clear technical rhythm.</p>
+        </article>
+        <article class="design-card">
+          <div class="design-card-top"><span>03 / CHARACTER</span><span>↗</span></div>
+          <div class="design-graphic design-graphic-stripes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>PALETTE</h3>
+          <p>Midnight blue, racing blue, crimson, gold, and taupe bring the supplied colour reference into the site.</p>
+        </article>
+      </div>
+      <div class="palette-band" aria-label="Stark Roadsters official five-colour palette">
+        <div style="--swatch:#807473"><span>TITANIUM TAUPE</span><code>#807473</code></div>
+        <div style="--swatch:#1763A0"><span>RACING BLUE</span><code>#1763A0</code></div>
+        <div style="--swatch:#1C278A"><span>ROYAL MIDNIGHT</span><code>#1C278A</code></div>
+        <div style="--swatch:#970F12"><span>RACING CRIMSON</span><code>#970F12</code></div>
+        <div style="--swatch:#997725"><span>METALLIC GOLD</span><code>#997725</code></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section" id="team" aria-labelledby="team-heading">
+    <div class="container">
+      <div class="section-marker"><span class="marker-line"></span> 04 / THE PEOPLE</div>
+      <div class="team-heading-row"><div><p class="section-overline">THE PEOPLE BEHIND THE WORK</p><h2 id="team-heading">SIX MINDS.<br /><em>ONE DRIVE.</em></h2></div><p>Engineering is a team effort. Names and roles belong here when they can be confirmed against the team's original records.</p></div>
+      <div class="team-grid" id="team-grid" aria-label="Team roster">
+        <div class="team-empty-state"><span class="team-status-mark" aria-hidden="true">S/R</span><div><strong>TEAM ROSTER IN VERIFICATION</strong><p>Member names and roles are not yet confirmed for publication. We won't guess or publish placeholder profiles.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="context-section" id="context" aria-labelledby="context-heading">
+    <div class="container">
+      <div class="section-marker"><span class="marker-line"></span> 05 / PROJECT RECORDS</div>
+      <div class="context-heading"><h2 id="context-heading">SHOW THE WORK.<br /><em>BACK THE CLAIMS.</em></h2><p>Team milestones and competition results deserve dates, evidence, and reliable sources. No verified build log or event record was available for this release.</p></div>
+      <div class="context-columns">
+        <article class="context-card"><div class="context-id"><span class="context-icon">◎</span> COMPETITION RECORD</div><h3>Results, with sources</h3><p>No official event dates or results are published here yet. Competition details will be added with links to the organizer's records once verified.</p><span class="context-footer">NO UNVERIFIED RESULTS PUBLISHED</span></article>
+        <article class="context-card"><div class="context-id"><span class="context-icon">↗</span> TEAM BUILD LOG</div><h3>Evidence over claims</h3><p>The current 3D model is illustrative. Build photos, design decisions, tests, and specifications will only be presented as team evidence when confirmed.</p><span class="context-footer">CONCEPT ART IS NOT BUILD EVIDENCE</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-section" aria-labelledby="closing-heading">
+    <div class="closing-ring" aria-hidden="true"></div>
+    <div class="container closing-content">
+      <div class="section-marker"><span class="marker-line"></span> FORWARD IS THE ONLY DIRECTION</div>
+      <h2 id="closing-heading">THE ROAD<br />STARTS <em>HERE.</em></h2>
+      <a href="#top" class="btn btn-primary">BACK TO THE START <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <a href="#top" class="footer-brand" aria-label="Stark Roadsters home"><img src="/assets/stark-roadsters-logo.png" alt="Stark Roadsters official logo" width="180" height="180" /></a>
+    <div class="footer-text"><p>DESIGN. ENGINEERING. TEAMWORK.</p><span>A motorsport engineering team, building its story around the work.</span></div>
+    <nav aria-label="Footer navigation"><a href="#identity">Purpose</a><a href="#machine">Concept</a><a href="#team">Team</a><a href="#context">Records</a><a href="https://github.com/syedmak43/Stark-Roadsters" target="_blank" rel="noopener noreferrer">Project source ↗</a></nav>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year">2026</span> STARK ROADSTERS</span><span>CONCEPT VISUALISATIONS ARE ILLUSTRATIVE</span><a href="#main">BACK TO TOP ↑</a></div>
+</footer>
+<script type="module" src="/main.js"></script>
+<script type="module" src="/enhance.js"></script>
+</body>
+</html>
